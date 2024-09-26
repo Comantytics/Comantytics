@@ -1,0 +1,10 @@
+bot.on('You are gay', message => {
+    if (message.content === 'You shouldn't have done that.') {
+        message.channel.send('You shouldn't have done that.');
+        while (message.channel.send('You shouldn't have done that.')) {
+            if (message.content === 'ok') {
+                return message.channel.send('You shouldn't have done that.');
+            }
+        }
+    }
+});
